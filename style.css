@@ -1,0 +1,161 @@
+/* Reset some default styles */
+p, h1, h2, h3, h4, ul, li {
+    margin-top: 30px;
+    padding: 0;
+}
+
+/* Apply a background color and font family to the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    background-color: #f8f8f8;
+}
+
+/* Ensure padding is included in the element's total width */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the unified header */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px; /* Add space before the button and after the last text */
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#navigation{
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 0 0;
+    position: fixed;
+    top: 55px;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+/* Style the header title */
+.header h1{
+    font-size: 24px;
+    margin: 5px;
+}
+
+#toggle-button {
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Style the navigation bar */
+#navigation nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Style the navigation list items */
+#navigation nav ul li {
+    margin: 0 20px;
+}
+
+/* Style the navigation links */
+#navigation nav a {
+    background-color: #555;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Style the navigation links on hover */
+#navigation nav a:hover {
+    color: #e40000;
+    transform: scale(1.05);
+}
+
+/* Style the content section */
+.contenu_princ {
+    padding: 100px 10px;
+    background-color: #fff;
+    margin: 0px auto;
+    max-width: 1500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the section titles */
+.contenu_princ h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Add a line underneath the titles for decoration */
+.contenu_princ h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #e40000;
+    margin: 10px auto;
+}
+
+
+/* Style the subsection titles */
+.contenu_princ h3 {
+    font-size: 15px;
+    color: #333;
+    margin: 20px 0;
+    padding-left: 10px; /* Adjust padding to create space for the line */
+    border-left: 4px solid orange; /* Add the vertical orange line */
+    text-transform: uppercase;
+}
+
+
+/* Style the publication titles */
+.publication-title {
+    font-style: italic;
+}
+
+/* Style the journal names */
+.journal-name {
+    font-style: italic;
+}
+
+/* Style the unordered and ordered lists */
+ul, ol {
+    padding-left: 20px; /* Add left padding to create space */
+    margin-bottom: 20px; /* Add bottom margin for additional spacing between lists */
+}
+
+/* Style list items */
+li {
+    margin: 10px 0; /* Add margin between list items */
+}
+
+/* Style nested lists */
+ul ul, ol ol {
+    padding-left: 20px; /* Add left padding to create space for nested lists */
+    margin-bottom: 10px; /* Add bottom margin for spacing between nested lists */
+}

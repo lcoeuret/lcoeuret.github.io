@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Coeuret's Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <button id="toggle-button" onclick="toggleNav()"><img id="arrow" src="menu.png" width="30" height="30"></button>
+        <h1>Lucas COEURET</h1>
+        <p>lucas.coeuret@math.univ-toulouse.fr</p>
+        <p>Postdoctoral researcher</p>
+        <p>Dipartimento di Matematica Tullio Levi-Civita</p>
+    </div>
+
+    <div id="navigation">
+        <nav>
+            <ul>
+                <li><a onclick="scrollToSection('about')">About Me</a></li>
+                <li><a onclick="scrollToSection('CV')">CV</a></li>
+                <li><a onclick="scrollToSection('research')">Research</a></li>
+                <li><a onclick="scrollToSection('seminars')">Seminars and Conference</a></li>
+                <li><a onclick="scrollToSection('teaching')">Teaching</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenu_princ">
+        <h2 id="about">About Me</h2>
+        <p>From September 2024, I will be a Postdoctoral researcher at the <a href="https://www.math.unipd.it/">Dipartimento di Matematica Tullio Levi-Civita</a> of the <a href="https://www.unipd.it/en/">University of Padova</a>. I defended my PhD on the 12th of July 2024. It was supervised by <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> and <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> at the <a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
+        <h3>Main research interest</h3>
+        <p>Numerical analysis of systems of conservation laws</p>
+            <ul>
+                <li>Stability of discrete shock profiles for systems of conservation laws.</li>
+                <li>Stability of finite difference schemes for the transport equation in 1D on the whole and the half-line.</li>
+            </ul>
+        
+        <h2 id="CV">CV</h2>
+        <p>Here is my complete <a href="Documents/CVCoeuret.pdf">CV</a> (version last updated 08/12/2023).</p>
+
+        <h2 id="research">Research</h2>
+
+        <h3>Preprints</h3>
+        <ul>
+            <li><span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2023, submitted) - [<a href="https://hal.science/hal-04270648">HAL</a>],[<a href="https://arxiv.org/abs/2311.02507">arXiv</a>],[<a href="Documents/Coeuret_DSP.pdf">Latest PDF version</a>] </li>
+        </ul>
+        
+        <h3>Articles</h3>
+        <ul>
+            <li><span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>) - [<a href="https://doi.org/10.1090/mcom/3901">Journal</a>], [<a href="https://hal.science/hal-04059973">HAL</a>],[<a href="https://arxiv.org/abs/2304.02612">arXiv</a>]</li>
+            <li><span class="publication-title">Local limit theorem for complex valued sequences</span> (2022, accepted at <span class="journal-name">Asymptotic Analysis</span>) - [<a href="https://hal.archives-ouvertes.fr/hal-03463375">HAL</a>],[<a href="https://arxiv.org/abs/2201.01514">arXiv</a>]</li>
+        </ul>
+
+        <h3>Proceedings</h3>
+        <ul>
+            <li><span class="publication-title">Large time behavior of finite difference schemes for the transport equation</span> (Hyperbolic Problems: Theory, Numerics, Applications. Volume II. HYP 2022, <span class="journal-name">SEMA SIMAI Springer Series</span>) - [<a href="https://doi.org/10.1007/978-3-031-55264-9_6">Journal</a>],[<a href="https://hal.science/hal-04191971v1">HAL</a>]</li>
+        </ul>
+
+        <h3>PhD Thesis</h3>
+
+        <p>My PhD entitled "<i>Stability of discrete shock profiles for systems of conservation laws</i>" was defended on the 12th of July 2024. It was supervised by <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> and <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> at the <a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
+
+        <ul>
+            <li><i>Manuscript:</i> [<a href="https://theses.hal.science/tel-04652121">HAL</a>], [<a href="Documents/CoeuretThèse_Final.pdf">PDF version</a>]</li>
+            <li><i>Presentation:</i>  [<a href="Documents/Présentation_Thèse.pdf">Slides</a>]</li>
+        </ul>
+
+        <h3>Organizing responsabilities</h3>
+
+        <ul>
+            <li><i>02/2024 - 09/2024:</i> Representative of PhD Students and Postdoctoral Researchers on the Laboratory Council at the Institut de Mathématiques de Toulouse</li>
+            <li><i>09/2023 - 09/2024:</i> Co-organizer of the PDE doctoral seminar at the Institut de Mathématiques de Toulouse</li>
+        </ul>
+        
+        <h2 id="seminars">Seminars and Conferences</h2>
+        <ul>
+            <li><span class="conference-name">Equadiff 2024, June 10-14, 2024, Karlstad (Sweden) - [<a href="Documents/Présentation_Equadiff.pdf">Slides</a>]</li>
+            <li><span class="conference-name">CANUM (Congrès d’Analyse Numérique) 2024, May 27-31, 2024, Île de Ré (France) - [<a href="Documents/Présentation_CANUM.pdf">Slides</a>]</li>
+            <li><span class="conference-name">Seminar EMA, November 23, 2023, Calais (France) - [<a href="Documents/Présentation LMPA.pdf">Slides</a>]</li>
+            <li><span class="conference-name">Seminar of Numerical Analysis of the IRMAR, November 16, 2023, Rennes (France) - [<a href="Documents/Présentation IRMAR.pdf">Slides</a>]</li>
+            <li><span class="conference-name">Congrès des Jeunes Chercheurs en Mathématiques et Applications 2023</span>, September 25-27, 2023, Gif-sur-Yvette (France) - [<a href="Documents/PresentationCoeuretCJCMA2023.pdf">Slides</a>]</li>
+            <li><span class="conference-name">Numhyp23 : Numerical Methods for Hyperbolic Problems</span>, June 26-30, 2023, Bordeaux (France) - [<a href="Documents/PresentationCoeuretNumhyp23.pdf">Slides</a>]</li>
+            <li><span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) - [<a href="Documents/PosterCoeuretStuttgart.pdf">Poster</a>]</li>
+            <li><span class="conference-name">XVIII International Conference on Hyperbolic Problems: Theory, Numerics, and Applications</span>, June 20-24, 2022, Málaga (Spain) - [<a href="Documents/PresentationCoeuretHYP2022.pdf">Slides</a>]</li>
+        </ul>
+
+        <h2 id="teaching">Teaching</h2>
+        <ul>
+            <li><span class="teaching-year">2023-2024:</span>
+                <ul>
+                    <li>Functions and Calculus 1, L1, TD, first semester, 28H</li>
+                    <li>Introduction to Real Analysis, L1, TD/TP, second semester, 32H</li>
+                </ul>
+            </li>
+            <li><span class="teaching-year">2022-2023:</span>
+                <ul>
+                    <li>Functions and Calculus 1, L1, TD, first semester, 28H</li>
+                    <li>Linear Algebra 1, L1, TP, first semester, 4H</li>
+                    <li>Introduction to Real Analysis, L1, TD/TP, second semester, 32H</li>
+                    <li>Linear Algebra 1, L1, TP, second semester, 4H</li>
+                </ul>
+            </li>
+            <li><span class="teaching-year">2021-2022:</span>
+                <ul>
+                    <li>Numerical Methods, L2, TD/TP, first semester, 24H</li>
+                    <li>Analysis, L1, Demi-cours/TD/TP, second semester, 41H</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="contact">Contact Me</h2>
+        <h3>Email</h3>
+        <p>lucas.coeuret@math.univ-toulouse.fr</p>
+
+        <h3>Address</h3>
+        <p>
+            Institut de Mathématiques de Toulouse <br>
+            Université Paul Sabatier <br>
+            118, route de Narbonne <br>
+            F-31062 Toulouse Cedex 9 <br>
+            Bâtiment 1R3, bureau 301.
+        </p>
+    </section>
+    <script>
+        function toggleNav() {
+            var navigation = document.getElementById('navigation');
+            navigation.style.display = (navigation.style.display === 'none' || navigation.style.display === '') ? 'block' : 'none';
+        }
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var offset = 110; // Adjust this value to set the height offset
+                var sectionPosition = section.offsetTop - offset;
+                window.scrollTo({
+                    top: sectionPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
