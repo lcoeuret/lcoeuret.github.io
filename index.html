@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Coeuret's Webpage</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax Script for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="header">
@@ -37,6 +41,8 @@
                 <li>Stability of discrete shock profiles for systems of conservation laws.</li>
                 <li>Stability of finite difference schemes for the transport equation in 1D on the whole and the half-line.</li>
             </ul>
+        <p>Theoretical analysis of the Hughes' model</p>
+        <p>Convergence of </p>
         
         <h2 id="CV">CV</h2>
         <p>Here is my complete <a href="Documents/CVCoeuret.pdf">CV</a> (version last updated 21/08/2024).</p>
@@ -44,20 +50,72 @@
         <h2 id="research">Research</h2>
 
         <h3>Preprints</h3>
+
         <ul>
-            <li><span class="publication-title">Nonlinear orbital stability of stationary discrete shock profiles for scalar conservation laws </span> (2024, submitted) - [<a href="https://hal.science/hal-04712769">HAL</a>],[<a href="https://arxiv.org/abs/2409.18930">arXiv</a>]</li>
-            <li><span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2023, submitted) - [<a href="https://hal.science/hal-04270648">HAL</a>],[<a href="https://arxiv.org/abs/2311.02507">arXiv</a>],[<a href="Documents/Coeuret_DSP.pdf">Latest PDF version</a>] </li>
+
+            <li>
+                <span class="publication-title">Nonlinear orbital stability of stationary discrete shock profiles for scalar conservation laws </span> (2024, submitted) 
+
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04712769')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2409.18930')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>For scalar conservation laws, we prove that spectrally stable stationary Lax discrete shock profiles are nonlinearly stable in some polynomially-weighted \(\ell^1\) and \(\ell^\infty\) spaces. In comparison with several previous nonlinear stability results on discrete shock profiles, we avoid the introduction of any weakness assumption on the amplitude of the shock and apply our analysis to a large family of schemes that introduce some artificial possibly high-order viscosity. The proof relies on a precise description of the Green's function of the linearization of the numerical scheme about spectrally stable discrete shock profiles obtained in [Coeu23]. The present article also pinpoints the ideas for a possible extension of this nonlinear orbital stability result for discrete shock profiles in the case of systems of conservation laws.</p>
+                 </div>
+            </li>
+
+            <li>
+
+                <span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2023, submitted) 
+
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04270648')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2311.02507')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>We prove the linear orbital stability of spectrally stable stationary discrete shock profiles for conservative finite difference schemes applied to systems of conservation laws. The proof relies on an accurate description of the pointwise asymptotic behavior of the Green's function associated with those discrete shock profiles, improving on the result of Lafitte-Godillon [God03]. The main novelty of this stability result is that it applies to a fairly large family of schemes that introduce some artificial possibly high-order viscosity. The result is obtained under a sharp spectral assumption rather than by imposing a smallness assumption on the shock amplitude.</p>
+                </div>
+
+            </li>
         </ul>
         
         <h3>Articles</h3>
         <ul>
-            <li><span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>) - [<a href="https://doi.org/10.1090/mcom/3901">Journal</a>], [<a href="https://hal.science/hal-04059973">HAL</a>],[<a href="https://arxiv.org/abs/2304.02612">arXiv</a>]</li>
-            <li><span class="publication-title">Local limit theorem for complex valued sequences</span> (2022, accepted at <span class="journal-name">Asymptotic Analysis</span>) - [<a href="https://hal.archives-ouvertes.fr/hal-03463375">HAL</a>],[<a href="https://arxiv.org/abs/2201.01514">arXiv</a>]</li>
+            <li>
+                <span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>)
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1090/mcom/3901')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04059973')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2304.02612')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In this paper, we prove that, under precise spectral assumptions, some finite difference approximations of scalar leftgoing transport equations on the positive half-line with numerical boundary conditions are \(\ell^1\)-stable but \(\ell^q\)-unstable for any \(q>1\). The proof relies on the accurate description of the Green's function for a particular family of finite rank perturbations of Toeplitz operators whose essential spectrum belongs to the closed unit disk and with a simple eigenvalue of modulus \(1\) embedded into the essential spectrum.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="publication-title">Local limit theorem for complex valued sequences</span> (2022, accepted at <span class="journal-name">Asymptotic Analysis</span>) 
+
+                <button class="link-button" onclick="window.open('https://hal.archives-ouvertes.fr/hal-03463375')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2201.01514')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In this article, we study the pointwise asymptotic behavior of iterated convolutions on the one dimensional lattice \(\mathbb{Z}\). We generalize the so-called local limit theorem in probability theory to complex valued sequences. A sharp rate of convergence towards an explicitly computable attractor is proved together with a generalized Gaussian bound for the asymptotic expansion up to any order of the iterated convolution.</p>
+                </div>
+            </li>
         </ul>
 
         <h3>Proceedings</h3>
         <ul>
-            <li><span class="publication-title">Large time behavior of finite difference schemes for the transport equation</span> (Hyperbolic Problems: Theory, Numerics, Applications. Volume II. HYP 2022, <span class="journal-name">SEMA SIMAI Springer Series</span>) - [<a href="https://doi.org/10.1007/978-3-031-55264-9_6">Journal</a>],[<a href="https://hal.science/hal-04191971v1">HAL</a>]</li>
+            <li>
+                <span class="publication-title">Large time behavior of finite difference schemes for the transport equation</span> (Hyperbolic Problems: Theory, Numerics, Applications. Volume II. HYP 2022, <span class="journal-name">SEMA SIMAI Springer Series</span>)
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1007/978-3-031-55264-9_6')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04191971v1')">HAL</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In order to study the large time behavior of finite difference schemes for the transport equation, we need to describe the pointwise asymptotic behavior of iterated convolutions for finitely supported sequences indexed on \(\mathbb{Z}\). In this paper, we investigate this question by presenting the main result of [Coeu22] which is a generalization of the so-called local limit theorem in probability theory to complex valued sequences.</p>
+                </div>
+            </li>
         </ul>
 
         <h3>PhD Thesis</h3>
@@ -65,8 +123,14 @@
         <p>My PhD entitled "<i>Stability of discrete shock profiles for systems of conservation laws</i>" was defended on the 12th of July 2024. It was supervised by <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> and <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> at the <a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
 
         <ul>
-            <li><i>Manuscript:</i> [<a href="https://theses.hal.science/tel-04652121">HAL</a>], [<a href="Documents/CoeuretThèse_Final.pdf">PDF version</a>]</li>
-            <li><i>Presentation:</i>  [<a href="Documents/Présentation_Thèse.pdf">Slides</a>]</li>
+            <li>
+                <i>Manuscript:</i> 
+                <button class="link-button" onclick="window.open('https://theses.hal.science/tel-04652121')">HAL</button>
+                <button class="link-button" onclick="window.open('Documents/CoeuretThèse_Final.pdf')">PDF version</button>
+            </li>
+            <li>
+                <i>Presentation:</i>  
+                <button class="link-button" onclick="window.open('Documents/Présentation_Thèse.pdf')">Slides</button></li>
         </ul>
 
         <h3>Organizing responsabilities</h3>
@@ -80,7 +144,6 @@
 
         <h3>Future attendance/talks</h3>
         <ul>
-            <li><span class="conference-name"> Seminari Generali dell'IAC </span>, October 8, 2024, Roma (Italy)</li>
             <li><span class="conference-name"> Meeting Sissa</span>, February 17-21, 2025, Trieste (Italy)</li>
             <li><span class="conference-name"> <a href="https://conference25.waves.kit.edu/">Conference on Mathematics of Wave Phenomena</a></span>, February 24-28, 2025, Karlsruhe (Germany)</li>
         </ul>
@@ -88,14 +151,49 @@
         <h3>Past talks</h3>
 
         <ul>
-            <li><span class="conference-name">Equadiff 2024</span>, June 10-14, 2024, Karlstad (Sweden) - [<a href="Documents/Présentation_Equadiff.pdf">Slides</a>]</li>
-            <li><span class="conference-name">CANUM (Congrès d’Analyse Numérique) 2024</span>, May 27-31, 2024, Île de Ré (France) - [<a href="Documents/Présentation_CANUM.pdf">Slides</a>]</li>
-            <li><span class="conference-name">Seminar EMA</span>, November 23, 2023, Calais (France) - [<a href="Documents/Présentation LMPA.pdf">Slides</a>]</li>
-            <li><span class="conference-name">Seminar of Numerical Analysis of the IRMAR</span>, November 16, 2023, Rennes (France) - [<a href="Documents/Présentation IRMAR.pdf">Slides</a>]</li>
-            <li><span class="conference-name">Congrès des Jeunes Chercheurs en Mathématiques et Applications 2023</span>, September 25-27, 2023, Gif-sur-Yvette (France) - [<a href="Documents/PresentationCoeuretCJCMA2023.pdf">Slides</a>]</li>
-            <li><span class="conference-name">Numhyp23 : Numerical Methods for Hyperbolic Problems</span>, June 26-30, 2023, Bordeaux (France) - [<a href="Documents/PresentationCoeuretNumhyp23.pdf">Slides</a>]</li>
-            <li><span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) - [<a href="Documents/PosterCoeuretStuttgart.pdf">Poster</a>]</li>
-            <li><span class="conference-name">XVIII International Conference on Hyperbolic Problems: Theory, Numerics, and Applications</span>, June 20-24, 2022, Málaga (Spain) - [<a href="Documents/PresentationCoeuretHYP2022.pdf">Slides</a>]</li>
+            <li>
+                <span class="conference-name"> Seminari Generali dell'IAC </span>, October 8, 2024, Roma (Italy)  
+                <button class="link-button" onclick="window.open('Documents/Présentation IAC.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Equadiff 2024</span>, June 10-14, 2024, Karlstad (Sweden) 
+                <button class="link-button" onclick="window.open('Documents/Présentation_Equadiff.pdf')">Slides</button>
+            </li>
+            <li>
+                <span class="conference-name">CANUM (Congrès d’Analyse Numérique) 2024</span>, May 27-31, 2024, Île de Ré (France) 
+                <button class="link-button" onclick="window.open('Documents/Présentation_CANUM.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Seminar EMA</span>, November 23, 2023, Calais (France) 
+                <button class="link-button" onclick="window.open('Documents/Présentation LMPA.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Seminar of Numerical Analysis of the IRMAR</span>, November 16, 2023, Rennes (France) 
+                <button class="link-button" onclick="window.open('Documents/Présentation IRMAR.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Congrès des Jeunes Chercheurs en Mathématiques et Applications 2023</span>, September 25-27, 2023, Gif-sur-Yvette (France) 
+                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretCJCMA2023.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Numhyp23 : Numerical Methods for Hyperbolic Problems</span>, June 26-30, 2023, Bordeaux (France) 
+                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretNumhyp23.pdf')">Slides</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) 
+                <button class="link-button" onclick="window.open('Documents/PosterCoeuretStuttgart.pdf')">Poster</button>
+            </li>
+            
+            <li>
+                <span class="conference-name">XVIII International Conference on Hyperbolic Problems: Theory, Numerics, and Applications</span>, June 20-24, 2022, Málaga (Spain) 
+                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretHYP2022.pdf')">Slides</button>
+            </li>
         </ul>
 
         <h3>Past attendance</h3>
@@ -139,7 +237,18 @@
             Studio 4BC6 
         </p>
     </section>
+
     <script>
+        function toggleAbstract(button) {
+            const abstractContent = button.nextElementSibling;
+            if (abstractContent.classList.contains('show')) {
+                abstractContent.classList.remove('show');
+                button.textContent = "Abstract";
+            } else {
+                abstractContent.classList.add('show');
+                button.textContent = "Hide Abstract";
+            }
+        }
         function toggleNav() {
             var navigation = document.getElementById('navigation');
             navigation.style.display = (navigation.style.display === 'none' || navigation.style.display === '') ? 'block' : 'none';

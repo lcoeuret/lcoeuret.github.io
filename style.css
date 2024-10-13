@@ -128,7 +128,7 @@ body {
     color: #333;
     margin: 20px 0;
     padding-left: 10px; /* Adjust padding to create space for the line */
-    border-left: 4px solid orange; /* Add the vertical orange line */
+    border-left: 10px solid orange; /* Add the vertical orange line */
     text-transform: uppercase;
 }
 
@@ -158,4 +158,58 @@ li {
 ul ul, ol ol {
     padding-left: 20px; /* Add left padding to create space for nested lists */
     margin-bottom: 10px; /* Add bottom margin for spacing between nested lists */
+}
+
+
+/* Style the abstract button */
+.abstract-btn {
+    background-color: #ff9000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.abstract-btn:hover {
+    background-color: #300000;
+}
+
+/* Style the abstract content */
+.abstract-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.abstract-content p {
+    margin: 10px 0;
+}
+
+/* Show the abstract when the button is clicked */
+.abstract-content.show {
+    display: block;
+    max-height: 200px; /* Set a max height to create the sliding effect */
+    opacity: 1;
+}
+
+.link-button {
+    background-color: #c30000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #300000;
 }
