@@ -42,11 +42,11 @@
         <ul>
             <li>Finite difference schemes for the transport equation: Stability, large-time behavior, boundary conditions, GKS theory</li>
             <li>Conservative finite difference schemes for hyperbolic systems of conservation laws: stability of discrete shock profiles via spatial dynamics technique and Green's function analysis</li>
-            <li>Traffic flow models and more precisely the Hughes' model</li>
+            <li>Traffic flow models: analysis of the 1D Hughes' model via wave front tracking approximations</li>
         </ul>
         
         <h2 id="CV">CV</h2>
-        <p>Here is my complete <a href="Documents/CVCoeuret.pdf">CV</a> (version last updated 14/02/2025).</p>
+        <p>Here is my complete <a href="Documents/CVCoeuret.pdf">CV</a> (version last updated 11/03/2025).</p>
 
         <h2 id="research">Research</h2>
 
@@ -64,10 +64,13 @@
                     <p>For scalar conservation laws, we prove that spectrally stable stationary Lax discrete shock profiles are nonlinearly stable in some polynomially-weighted \(\ell^1\) and \(\ell^\infty\) spaces. In comparison with several previous nonlinear stability results on discrete shock profiles, we avoid the introduction of any weakness assumption on the amplitude of the shock and apply our analysis to a large family of schemes that introduce some artificial possibly high-order viscosity. The proof relies on a precise description of the Green's function of the linearization of the numerical scheme about spectrally stable discrete shock profiles obtained in [Coeu23]. The present article also pinpoints the ideas for a possible extension of this nonlinear orbital stability result for discrete shock profiles in the case of systems of conservation laws.</p>
                  </div>
             </li>
-
+        </ul>
+        
+        <h3>Articles</h3>
+        <ul>
             <li>
 
-                <span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2023, submitted) 
+                <span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2025, accepted at <span class="journal-name">Journal of Hyperbolic Differential Equations</span>) 
 
                 <button class="link-button" onclick="window.open('https://hal.science/hal-04270648')">HAL</button>
                 <button class="link-button" onclick="window.open('https://arxiv.org/abs/2311.02507')">arXiv</button>
@@ -76,21 +79,6 @@
                     <p>We prove the linear orbital stability of spectrally stable stationary discrete shock profiles for conservative finite difference schemes applied to systems of conservation laws. The proof relies on an accurate description of the pointwise asymptotic behavior of the Green's function associated with those discrete shock profiles, improving on the result of Lafitte-Godillon [God03]. The main novelty of this stability result is that it applies to a fairly large family of schemes that introduce some artificial possibly high-order viscosity. The result is obtained under a sharp spectral assumption rather than by imposing a smallness assumption on the shock amplitude.</p>
                 </div>
 
-            </li>
-        </ul>
-        
-        <h3>Articles</h3>
-        <ul>
-            <li>
-                <span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>)
-
-                <button class="link-button" onclick="window.open('https://doi.org/10.1090/mcom/3901')">Journal</button>
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04059973')">HAL</button>
-                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2304.02612')">arXiv</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>In this paper, we prove that, under precise spectral assumptions, some finite difference approximations of scalar leftgoing transport equations on the positive half-line with numerical boundary conditions are \(\ell^1\)-stable but \(\ell^q\)-unstable for any \(q>1\). The proof relies on the accurate description of the Green's function for a particular family of finite rank perturbations of Toeplitz operators whose essential spectrum belongs to the closed unit disk and with a simple eigenvalue of modulus \(1\) embedded into the essential spectrum.</p>
-                </div>
             </li>
 
             <li>
@@ -102,6 +90,18 @@
                 <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
                 <div class="abstract-content">
                     <p>In this article, we study the pointwise asymptotic behavior of iterated convolutions on the one dimensional lattice \(\mathbb{Z}\). We generalize the so-called local limit theorem in probability theory to complex valued sequences. A sharp rate of convergence towards an explicitly computable attractor is proved together with a generalized Gaussian bound for the asymptotic expansion up to any order of the iterated convolution.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>)
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1090/mcom/3901')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04059973')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2304.02612')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In this paper, we prove that, under precise spectral assumptions, some finite difference approximations of scalar leftgoing transport equations on the positive half-line with numerical boundary conditions are \(\ell^1\)-stable but \(\ell^q\)-unstable for any \(q>1\). The proof relies on the accurate description of the Green's function for a particular family of finite rank perturbations of Toeplitz operators whose essential spectrum belongs to the closed unit disk and with a simple eigenvalue of modulus \(1\) embedded into the essential spectrum.</p>
                 </div>
             </li>
         </ul>
@@ -156,10 +156,7 @@
                 <button class="link-button" onclick="window.open('Documents/Presentation_Karlsruhe.pdf')">Slides</button>
             </li>
 
-            <li>
-                <span class="conference-name"><a href="https://sites.google.com/view/13nepdef">13th Meeting on Nonlinear Evolution PDEs, Fluid Dynamics and Transport Equations</a></span>, February 17-21, 2025, Triesta (Italia)
-                <button class="link-button" onclick="window.open('Documents/PosterCoeuretTriesta.pdf')">Poster</button>
-            </li>
+            
             <li>
                 <span class="conference-name"><a href="https://jef2025.sciencesconf.org/">Journée Jeunes EDPistes</a></span>, January 8-10, 2025, Nice (France)
                 <button class="link-button" onclick="window.open('Documents/Presentation_Jeunes_EDPistes.pdf')">Slides</button>
@@ -200,11 +197,6 @@
             </li>
             
             <li>
-                <span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) 
-                <button class="link-button" onclick="window.open('Documents/PosterCoeuretStuttgart.pdf')">Poster</button>
-            </li>
-            
-            <li>
                 <span class="conference-name">XVIII International Conference on Hyperbolic Problems: Theory, Numerics, and Applications</span>, June 20-24, 2022, Málaga (Spain) 
                 <button class="link-button" onclick="window.open('Documents/PresentationCoeuretHYP2022.pdf')">Slides</button>
             </li>
@@ -213,7 +205,20 @@
         <h3>Past attendance</h3>
 
         <ul>
-            <li><span class="conference-name"><a href="https://sites.google.com/view/eliomarconi/events/summer-school-in-fluid-dynamics-and-pdes?authuser=0">Summer school in fluid dynamics and nonlinear PDEs</a></span>, September 9-13, 2024, Padova (Italy)</li>
+
+            <li>
+                <span class="conference-name"><a href="https://sites.google.com/view/13nepdef">13th Meeting on Nonlinear Evolution PDEs, Fluid Dynamics and Transport Equations</a></span>, February 17-21, 2025, Triesta (Italia)
+                <button class="link-button" onclick="window.open('Documents/PosterCoeuretTriesta.pdf')">Poster</button>
+            </li>
+
+            <li>
+                <span class="conference-name"><a href="https://sites.google.com/view/eliomarconi/events/summer-school-in-fluid-dynamics-and-pdes?authuser=0">Summer school in fluid dynamics and nonlinear PDEs</a></span>, September 9-13, 2024, Padova (Italy)
+            </li>
+
+            <li>
+                <span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) 
+                <button class="link-button" onclick="window.open('Documents/PosterCoeuretStuttgart.pdf')">Poster</button><button class="link-button" onclick="window.open('https://hal.science/hal-04611955v1')">HAL</button>
+            </li>
         </ul>
 
         <h2 id="teaching">Teaching</h2>
