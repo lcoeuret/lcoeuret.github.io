@@ -1,3 +1,9 @@
+:root {
+    --primary: #210070;
+    --secondary: #37C4B4;
+    --hover: #ff9000;;
+}
+
 /* Reset some default styles */
 p, h1, h2, h3, h4, ul, li {
     margin-top: 30px;
@@ -9,7 +15,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana;
-    background-color: #f8f8f8;
 }
 
 /* Ensure padding is included in the element's total width */
@@ -19,10 +24,10 @@ body {
 
 /* Style the unified header */
 .header {
-    background-color: #333;
+    background-color: var(--primary);
     color: #fff;
     text-align: center;
-    padding: 0 20px; /* Add space before the button and after the last text */
+    padding: 0 20px;
     position: fixed;
     width: 100%;
     height: 55px;
@@ -34,10 +39,9 @@ body {
 
 
 #navigation{
-    background-color: #555;
-    color: #fff;
+    background-color: var(--secondary);
     text-align: center;
-    padding: 0 0;
+    padding: 0 20px;
     position: fixed;
     top: 50px;
     height: 60px;
@@ -45,7 +49,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: none;
 }
 
 /* Style the header title */
@@ -55,29 +58,16 @@ body {
 }
 
 #toggle-button {
-  background-color: #333;
+  background-color: var(--primary);
   border: none;
   cursor: pointer;
   margin: 10px;
 }
 
-/* Style the navigation bar */
-#navigation nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 0 0;
-}
-
-/* Style the navigation list items */
-#navigation nav ul li {
-    margin: 0 20px;
-}
-
 /* Style the navigation links */
-#navigation nav a {
-    background-color: #555;
-  color: #fff;
+#navigation a {
+background-color: var(--secondary);
+color:#fff;
   font-size: 15px;
   text-decoration: none;
   padding: 0;
@@ -88,8 +78,8 @@ body {
 }
 
 /* Style the navigation links on hover */
-#navigation nav a:hover {
-    color: #e40000;
+#navigation a:hover {
+    color: var(--hover);
     transform: scale(1.05);
 }
 
@@ -102,22 +92,39 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.contenu_princ a{
+    color: var(--primary);
+}
+
+.contenu_princ a:hover{
+    color: var(--hover);
+}
+
 /* Style the section titles */
 .contenu_princ h2 {
-    font-size: 24px;
-    color: #333;
+    font-size: 20px;
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* Add a line above the titles for decoration */
+.contenu_princ h2::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background-color: var(--secondary);
+    margin: 10px auto;
 }
 
 /* Add a line underneath the titles for decoration */
 .contenu_princ h2::after {
     content: "";
     display: block;
-    width: 50px;
-    height: 2px;
-    background-color: #e40000;
+    width: 80px;
+    height: 6px;
+    background-color: var(--secondary);
     margin: 10px auto;
 }
 
@@ -125,10 +132,9 @@ body {
 /* Style the subsection titles */
 .contenu_princ h3 {
     font-size: 15px;
-    color: #333;
     margin: 20px 0;
     padding-left: 10px; /* Adjust padding to create space for the line */
-    border-left: 10px solid orange; /* Add the vertical orange line */
+    border-left: 10px solid var(--secondary); /* Add the vertical line */
     text-transform: uppercase;
 }
 
@@ -163,7 +169,7 @@ ul ul, ol ol {
 
 /* Style the abstract button */
 .abstract-btn {
-    background-color: #ff9000;
+    background-color: var(--secondary);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -175,7 +181,7 @@ ul ul, ol ol {
 }
 
 .abstract-btn:hover {
-    background-color: #300000;
+    background-color: var(--hover);
 }
 
 /* Style the abstract content */
@@ -199,7 +205,7 @@ ul ul, ol ol {
 }
 
 .link-button {
-    background-color: #c30000;
+    background-color: var(--primary);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -211,5 +217,5 @@ ul ul, ol ol {
 }
 
 .link-button:hover {
-    background-color: #300000;
+    background-color: var(--hover);
 }

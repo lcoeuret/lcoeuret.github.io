@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Coeuret's Webpage</title>
+    <title>Lucas Coeuret</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- MathJax Script for LaTeX rendering -->
@@ -12,297 +12,56 @@
 </head>
 <body>
     <div class="header">
-        <button id="toggle-button" onclick="toggleNav()"><img id="arrow" src="menu.png" width="30" height="30"></button>
+        <div class="language-switcher">
+            <a href="index.html"><img src="fr_flag.png" alt="Français" width="30" height="20"></a> <a href="index_eng.html"><img src="uk_flag.png" alt="English" width="30" height="20"></a>
+        </div>
         <h1>Lucas COEURET</h1>
-        <p>lucas.coeuret@math.unipd.it</p>
-        <p>Postdoctoral researcher</p>
-        <p>Dipartimento di Matematica Tullio Levi-Civita</p>
+        <p>lucas.coeuret@univ-lorraine.fr</p>
+        <p>Maître de conférences</p>
+        <p>Nancy - Université de Lorraine</p>
     </div>
 
     <div id="navigation">
-        <nav>
-            <ul>
-                <li><a onclick="scrollToSection('about')">About Me</a></li>
-                <li><a onclick="scrollToSection('CV')">CV</a></li>
-                <li><a onclick="scrollToSection('research')">Research</a></li>
-                <li><a onclick="scrollToSection('seminars')">Seminars and Conference</a></li>
-                <li><a onclick="scrollToSection('teaching')">Teaching</a></li>
-                <li><a onclick="scrollToSection('contact')">Contact Me</a></li>
-            </ul>
-        </nav>
+        <p><a href="index.html">Contact</a></p>
+        <p><a href="research.html">Recherche</a></p>
+        <p><a href="programs.html">Programmes</a></p>
+        <p><a href="seminars.html">Séminaires et Conférences</a></p>
+        <p><a href="teaching.html">Enseignement</a></p>
     </div>
 
     <div class="contenu_princ">
-        <h2 id="about">About Me</h2>
-        <p>From September 2024, I am a Postdoctoral researcher at the <a href="https://www.math.unipd.it/">Dipartimento di Matematica Tullio Levi-Civita</a> of the <a href="https://www.unipd.it/en/">University of Padova</a> supervised by <a href="https://www.math.unipd.it/~ancona/">Fabio Ancona</a>, <a href="http://www.lauracaravenna.altervista.org/nuova/index.html">Laura Caravenna</a>, <a href="https://sites.google.com/view/eliomarconi/">Elio Marconi</a> and <a href="https://wwwold.iac.cnr.it/~bianchini/">Roberta Bianchini</a> in the project <a href="https://www.emilianocristiani.it/PRIN2022PNRRbianchini/index.html">PRIN 2022 PNRR Heterogeneity on the Road: Modeling, Analysis, Control</a>. </p>
+        <h2>Contact</h2>
+        <p>Depuis Septembre 2025, je suis Maître de conférences en Mathématiques Appliquées (Section CNU 26) à l'<a href="https://www.univ-lorraine.fr/">Université de Lorraine</a>. Je suis membre de l'<a href="https://iecl.univ-lorraine.fr/">Institut Élie Cartan de Lorraine (IECL)</a> sur le site de Nancy et j'enseigne au sein du département d'Informatique de l'<a href="https://iut-charlemagne.univ-lorraine.fr/">IUT Nancy-Charlemagne</a>.</p>
 
-        <p>I defended my PhD on the 12th of July 2024. It was supervised by <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> and <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> at the <a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
-        <h3>Main research interest</h3>
-        
-        <ul>
-            <li>Finite difference schemes for the transport equation: Stability, large-time behavior, boundary conditions, GKS theory</li>
-            <li>Conservative finite difference schemes for hyperbolic systems of conservation laws: stability of discrete shock profiles via spatial dynamics technique and Green's function analysis</li>
-            <li>Traffic flow models </li>
-        </ul>
-        
-        <h2 id="CV">CV</h2>
-        <p>Here is my complete <a href="Documents/CVCoeuret.pdf">CV</a> (version last updated 06/05/2025).</p>
+        <p>Entre Septembre 2024 et Septembre 2025, j'étais chercheur postdoctorant au <a href="https://www.math.unipd.it/">Dipartimento di Matematica Tullio Levi-Civita</a> de l'<a href="https://www.unipd.it/en/">Université de Padoue</a>. J'étais supervisé par <a href="https://www.math.unipd.it/~ancona/">Fabio Ancona</a>, <a href="https://www.math.unipd.it/~lcaraven/">Laura Caravenna</a>, <a href="https://sites.google.com/view/eliomarconi/">Elio Marconi</a> et <a href="https://wwwold.iac.cnr.it/~bianchini/">Roberta Bianchini</a>, au sein du projet <a href="https://www.emilianocristiani.it/PRIN2022PNRRbianchini/index.html">PRIN 2022 PNRR Heterogeneity on the Road: Modeling, Analysis, Control</a>.</p>
 
-        <h2 id="research">Research</h2>
+        <p>J'ai soutenu ma thèse "<a href="https://theses.hal.science/tel-04652121"><i>Stabilité de profils de choc totalement discrets pour les systèmes de lois de conservation</i></a>" le 12 Juillet 2024. J'étais supervisé par <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> et <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> à l'<a href="https://www.math.univ-toulouse.fr/fr/">Institut de Mathématiques de Toulouse</a>.</p>
 
-        <h3>Preprints</h3>
-
-        <ul>
-
-            <li>
-                <span class="publication-title">Nonlinear orbital stability of stationary discrete shock profiles for scalar conservation laws </span> (2024, submitted) 
-
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04712769')">HAL</button>
-                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2409.18930')">arXiv</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>For scalar conservation laws, we prove that spectrally stable stationary Lax discrete shock profiles are nonlinearly stable in some polynomially-weighted \(\ell^1\) and \(\ell^\infty\) spaces. In comparison with several previous nonlinear stability results on discrete shock profiles, we avoid the introduction of any weakness assumption on the amplitude of the shock and apply our analysis to a large family of schemes that introduce some artificial possibly high-order viscosity. The proof relies on a precise description of the Green's function of the linearization of the numerical scheme about spectrally stable discrete shock profiles obtained in [Coeu23]. The present article also pinpoints the ideas for a possible extension of this nonlinear orbital stability result for discrete shock profiles in the case of systems of conservation laws.</p>
-                 </div>
-            </li>
-        </ul>
-        
-        <h3>Articles</h3>
-        <ul>
-            <li>
-
-                <span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2025, accepted at <span class="journal-name">Journal of Hyperbolic Differential Equations</span>) 
-
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04270648')">HAL</button>
-                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2311.02507')">arXiv</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>We prove the linear orbital stability of spectrally stable stationary discrete shock profiles for conservative finite difference schemes applied to systems of conservation laws. The proof relies on an accurate description of the pointwise asymptotic behavior of the Green's function associated with those discrete shock profiles, improving on the result of Lafitte-Godillon [God03]. The main novelty of this stability result is that it applies to a fairly large family of schemes that introduce some artificial possibly high-order viscosity. The result is obtained under a sharp spectral assumption rather than by imposing a smallness assumption on the shock amplitude.</p>
-                </div>
-
-            </li>
-
-            <li>
-                <span class="publication-title">Local limit theorem for complex valued sequences</span> (2025, <span class="journal-name">Asymptotic Analysis</span>) 
-
-                <button class="link-button" onclick="window.open('https://doi.org/10.1177/09217134241308379')">Journal</button>
-                <button class="link-button" onclick="window.open('https://hal.archives-ouvertes.fr/hal-03463375')">HAL</button>
-                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2201.01514')">arXiv</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>In this article, we study the pointwise asymptotic behavior of iterated convolutions on the one dimensional lattice \(\mathbb{Z}\). We generalize the so-called local limit theorem in probability theory to complex valued sequences. A sharp rate of convergence towards an explicitly computable attractor is proved together with a generalized Gaussian bound for the asymptotic expansion up to any order of the iterated convolution.</p>
-                </div>
-            </li>
-
-            <li>
-                <span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>)
-
-                <button class="link-button" onclick="window.open('https://doi.org/10.1090/mcom/3901')">Journal</button>
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04059973')">HAL</button>
-                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2304.02612')">arXiv</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>In this paper, we prove that, under precise spectral assumptions, some finite difference approximations of scalar leftgoing transport equations on the positive half-line with numerical boundary conditions are \(\ell^1\)-stable but \(\ell^q\)-unstable for any \(q>1\). The proof relies on the accurate description of the Green's function for a particular family of finite rank perturbations of Toeplitz operators whose essential spectrum belongs to the closed unit disk and with a simple eigenvalue of modulus \(1\) embedded into the essential spectrum.</p>
-                </div>
-            </li>
-        </ul>
-
-        <h3>Proceedings</h3>
-        <ul>
-            <li>
-                <span class="publication-title">Large time behavior of finite difference schemes for the transport equation</span> (Hyperbolic Problems: Theory, Numerics, Applications. Volume II. HYP 2022, <span class="journal-name">SEMA SIMAI Springer Series</span>)
-
-                <button class="link-button" onclick="window.open('https://doi.org/10.1007/978-3-031-55264-9_6')">Journal</button>
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04191971v1')">HAL</button>
-                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
-                <div class="abstract-content">
-                    <p>In order to study the large time behavior of finite difference schemes for the transport equation, we need to describe the pointwise asymptotic behavior of iterated convolutions for finitely supported sequences indexed on \(\mathbb{Z}\). In this paper, we investigate this question by presenting the main result of [Coeu22] which is a generalization of the so-called local limit theorem in probability theory to complex valued sequences.</p>
-                </div>
-            </li>
-        </ul>
-
-        <h3>PhD Thesis</h3>
-
-        <p>My PhD entitled "<i>Stability of discrete shock profiles for systems of conservation laws</i>" was defended on the 12th of July 2024. It was supervised by <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> and <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> at the <a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
-
-        <ul>
-            <li>
-                <i>Manuscript:</i> 
-                <button class="link-button" onclick="window.open('https://theses.hal.science/tel-04652121')">HAL</button>
-            </li>
-            <li>
-                <i>Presentation:</i>  
-                <button class="link-button" onclick="window.open('Documents/Presentation_These.pdf')">Slides</button></li>
-        </ul>
-
-        <h3>Organizing responsabilities</h3>
-
-        <ul>
-            <li><i>02/2024 - 09/2024:</i> Representative of PhD Students and Postdoctoral Researchers on the Laboratory Council at the Institut de Mathématiques de Toulouse</li>
-            <li><i>09/2023 - 09/2024:</i> Co-organizer of the PDE doctoral seminar at the Institut de Mathématiques de Toulouse</li>
-        </ul>
-        
-        <h2 id="seminars">Seminars and Conferences</h2>
-
-        <h3>Future attendance/talks</h3>
-
-        <ul>
-
-            <li>
-                <span class="conference-name">Workshop: Traffico e Leggi di Conservazione</span>, June 5, 2025, Rome (Italy)
-            </li>
-
-            <li>
-                <span class="conference-name"><a href="https://project.inria.fr/populate2025/ecole-dete/">Summer School on “Population Dynamics: From fundamental to applied science”</a></span>, June 16-27, 2025, Grasse (France)
-            </li>
-
-        </ul>
-
-
-        <h3>Past talks</h3>
-
-        <ul>
-
-            <li>
-                <span class="conference-name"> Séminaire EDP et Applications de l'Institut Élie Cartan de Lorraine</span>, 25 March 2025, Nancy (France)
-                <button class="link-button" onclick="window.open('Documents/Presentation_Nancy.pdf')">Slides</button>
-            </li>
-
-            <li>
-                <span class="conference-name"> <a href="https://conference25.waves.kit.edu/">Conference on Mathematics of Wave Phenomena</a></span>, February 24-28, 2025, Karlsruhe (Germany)
-                <button class="link-button" onclick="window.open('Documents/Presentation_Karlsruhe.pdf')">Slides</button>
-            </li>
-
-            
-            <li>
-                <span class="conference-name"><a href="https://jef2025.sciencesconf.org/">Journée Jeunes EDPistes</a></span>, January 8-10, 2025, Nice (France)
-                <button class="link-button" onclick="window.open('Documents/Presentation_Jeunes_EDPistes.pdf')">Slides</button>
-            </li>
-
-            <li>
-                <span class="conference-name"> Seminari Generali dell'IAC </span>, October 8, 2024, Roma (Italy)  
-                <button class="link-button" onclick="window.open('Documents/Presentation IAC.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">Equadiff 2024</span>, June 10-14, 2024, Karlstad (Sweden) 
-                <button class="link-button" onclick="window.open('Documents/Presentation_Equadiff.pdf')">Slides</button>
-            </li>
-            <li>
-                <span class="conference-name">CANUM (Congrès d’Analyse Numérique) 2024</span>, May 27-31, 2024, Île de Ré (France) 
-                <button class="link-button" onclick="window.open('Documents/Presentation_CANUM.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">Seminar EMA</span>, November 23, 2023, Calais (France) 
-                <button class="link-button" onclick="window.open('Documents/Presentation LMPA.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">Seminar of Numerical Analysis of the IRMAR</span>, November 16, 2023, Rennes (France) 
-                <button class="link-button" onclick="window.open('Documents/Presentation IRMAR.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">Congrès des Jeunes Chercheurs en Mathématiques et Applications 2023</span>, September 25-27, 2023, Gif-sur-Yvette (France) 
-                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretCJCMA2023.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">Numhyp23 : Numerical Methods for Hyperbolic Problems</span>, June 26-30, 2023, Bordeaux (France) 
-                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretNumhyp23.pdf')">Slides</button>
-            </li>
-            
-            <li>
-                <span class="conference-name">XVIII International Conference on Hyperbolic Problems: Theory, Numerics, and Applications</span>, June 20-24, 2022, Málaga (Spain) 
-                <button class="link-button" onclick="window.open('Documents/PresentationCoeuretHYP2022.pdf')">Slides</button>
-            </li>
-        </ul>
-
-        <h3>Past attendance</h3>
-
-        <ul>
-
-            <li>
-                <span class="conference-name"><a href="https://sites.google.com/view/13nepdef">13th Meeting on Nonlinear Evolution PDEs, Fluid Dynamics and Transport Equations</a></span>, February 17-21, 2025, Triesta (Italia)
-                <!-- <button class="link-button" onclick="window.open('Documents/PosterCoeuretTriesta.pdf')">Poster</button> -->
-            </li>
-
-            <li>
-                <span class="conference-name"><a href="https://sites.google.com/view/eliomarconi/events/summer-school-in-fluid-dynamics-and-pdes?authuser=0">Summer school in fluid dynamics and nonlinear PDEs</a></span>, September 9-13, 2024, Padova (Italy)
-            </li>
-
-            <li>
-                <span class="conference-name">Workshop on spatial dynamics and related approaches</span>, September 5-7, 2022, Stuttgart (Germany) 
-                <button class="link-button" onclick="window.open('Documents/PosterCoeuretStuttgart.pdf')">Poster</button>
-                <button class="link-button" onclick="window.open('https://hal.science/hal-04611955v1')">HAL</button>
-            </li>
-        </ul>
-
-        <h2 id="teaching">Teaching</h2>
-        <ul>
-            Doctorant contractuel en charge d'enseignement - Université Toulouse III Paul Sabatier
-            
-            <li><span class="teaching-year">2023-2024:</span>
-                <ul>
-                    <li>Functions and Calculus 1, L1, TD, first semester, 28H</li>
-                    <li>Introduction to Real Analysis, L1, TD/TP, second semester, 32H</li>
-                </ul>
-            </li>
-            <li><span class="teaching-year">2022-2023:</span>
-                <ul>
-                    <li>Functions and Calculus 1, L1, TD, first semester, 28H</li>
-                    <li>Linear Algebra 1, L1, TP, first semester, 4H</li>
-                    <li>Introduction to Real Analysis, L1, TD/TP, second semester, 32H</li>
-                    <li>Linear Algebra 1, L1, TP, second semester, 4H</li>
-                </ul>
-            </li>
-            <li><span class="teaching-year">2021-2022:</span>
-                <ul>
-                    <li>Numerical Methods, L2, TD/TP, first semester, 24H</li>
-                    <li>Analysis, L1, Demi-cours/TD/TP, second semester, 41H</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2 id="contact">Contact Me</h2>
         <h3>Email</h3>
-        <p>lucas.coeuret@math.unipd.it</p>
+        <p>lucas.coeuret@univ-lorraine.fr</p>
 
-        <h3>Address</h3>
+        <h3>Adresse Recherche</h3>
         <p>
-            Dipartimento di Matematica Tullio Levi-Civita - Università degli Studi di Padova
-            Via Trieste 63, 35121 Padova, Italy
-            Studio 4BC6 
+            Institut Elie Cartan de Lorraine (Site de Nancy) - Université de Lorraine
+            Campus, Boulevard des Aiguillettes, 54506 Vandoeuvre-lès-Nancy
+            Bureau 317
         </p>
-    </section>
 
-    <script>
-        function toggleAbstract(button) {
-            const abstractContent = button.nextElementSibling;
-            if (abstractContent.classList.contains('show')) {
-                abstractContent.classList.remove('show');
-                button.textContent = "Abstract";
-            } else {
-                abstractContent.classList.add('show');
-                button.textContent = "Hide Abstract";
-            }
-        }
-        function toggleNav() {
-            var navigation = document.getElementById('navigation');
-            navigation.style.display = (navigation.style.display === 'none' || navigation.style.display === '') ? 'block' : 'none';
-        }
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section) {
-                var offset = 110; // Adjust this value to set the height offset
-                var sectionPosition = section.offsetTop - offset;
-                window.scrollTo({
-                    top: sectionPosition,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    </script>
+        <h3>Adresse Enseignement</h3>
+        <p>
+            Département Informatique - IUT Nancy-Charlemagne
+            2 ter Boulevard Charlemagne, 54000 Nancy
+            Bureau 114
+        </p>
+        
+        <h3 >CV</h3>
+        <p>Voici une version détaillée de mon CV - <button class="link-button" onclick="window.open('Documents/CVCoeuret_fr.pdf')">Version française</button> <button class="link-button" onclick="window.open('Documents/CVCoeuret_fr.pdf')">English version</button> (mis à jour 01/09/2025)</p>
+
+
+        
+
+        
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Coeuret</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax Script for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="language-switcher">
+            <a href="research.html"><img src="fr_flag.png" alt="Français" width="30" height="20"></a> <a href="research_eng.html"><img src="uk_flag.png" alt="English" width="30" height="20"></a>
+        </div>
+        <h1>Lucas COEURET</h1>
+        <p>lucas.coeuret@univ-lorraine.fr</p>
+        <p>Maître de conférences</p>
+        <p>Nancy - Université de Lorraine</p>
+    </div>
+
+    <div id="navigation">
+        <p><a href="index.html">Contact</a></p>
+        <p><a href="research.html">Recherche</a></p>
+        <p><a href="programs.html">Programmes</a></p>
+        <p><a href="seminars.html">Séminaires et Conférences</a></p>
+        <p><a href="teaching.html">Enseignement</a></p>
+    </div>
+
+    <div class="contenu_princ">
+
+        <h2>Recherche</h2>
+
+        <h3>Thèmes de recherche</h3>
+        
+        <ul>
+            <li>Schémas aux différences finies pour l'équation de transport: Stabilité, comportement en temps long, conditions de bords, Théorie GKS</li>
+            <li>Schémas aux différences finies conservatifs pour les systèmes de lois de conservation hyperboliques: stabilité des profils de choc totalement discrets via les techniques de dynamique spatiale et l'étude de fonctions de Green</li>
+            <li>Modèles de trafic routier et piéton</li>
+        </ul>
+
+
+        <h3>Prépublications</h3>
+
+        <ul>
+
+            <li>
+                <span class="publication-title">Nonlinear orbital stability of stationary discrete shock profiles for scalar conservation laws </span> (2024, soumis) 
+
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04712769')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2409.18930')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>For scalar conservation laws, we prove that spectrally stable stationary Lax discrete shock profiles are nonlinearly stable in some polynomially-weighted \(\ell^1\) and \(\ell^\infty\) spaces. In comparison with several previous nonlinear stability results on discrete shock profiles, we avoid the introduction of any weakness assumption on the amplitude of the shock and apply our analysis to a large family of schemes that introduce some artificial possibly high-order viscosity. The proof relies on a precise description of the Green's function of the linearization of the numerical scheme about spectrally stable discrete shock profiles obtained in [Coeu23]. The present article also pinpoints the ideas for a possible extension of this nonlinear orbital stability result for discrete shock profiles in the case of systems of conservation laws.</p>
+                 </div>
+            </li>
+        </ul>
+        
+        <h3>Articles</h3>
+        <ul>
+            <li>
+
+                <span class="publication-title">Linear stability of discrete shock profiles for systems of conservation laws</span> (2025, <span class="journal-name">Journal of Hyperbolic Differential Equations</span>) 
+
+                <button class="link-button" onclick="window.open('https:///doi.org/10.1142/S0219891625500092')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04270648')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2311.02507')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>We prove the linear orbital stability of spectrally stable stationary discrete shock profiles for conservative finite difference schemes applied to systems of conservation laws. The proof relies on an accurate description of the pointwise asymptotic behavior of the Green's function associated with those discrete shock profiles, improving on the result of Lafitte-Godillon [God03]. The main novelty of this stability result is that it applies to a fairly large family of schemes that introduce some artificial possibly high-order viscosity. The result is obtained under a sharp spectral assumption rather than by imposing a smallness assumption on the shock amplitude.</p>
+                </div>
+
+            </li>
+
+            <li>
+                <span class="publication-title">Local limit theorem for complex valued sequences</span> (2025, <span class="journal-name">Asymptotic Analysis</span>) 
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1177/09217134241308379')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.archives-ouvertes.fr/hal-03463375')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2201.01514')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In this article, we study the pointwise asymptotic behavior of iterated convolutions on the one dimensional lattice \(\mathbb{Z}\). We generalize the so-called local limit theorem in probability theory to complex valued sequences. A sharp rate of convergence towards an explicitly computable attractor is proved together with a generalized Gaussian bound for the asymptotic expansion up to any order of the iterated convolution.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="publication-title">Tamed stability of finite difference schemes for the transport equation on the half-line</span> (2024, <span class="journal-name">Mathematics of Computation</span>)
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1090/mcom/3901')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04059973')">HAL</button>
+                <button class="link-button" onclick="window.open('https://arxiv.org/abs/2304.02612')">arXiv</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In this paper, we prove that, under precise spectral assumptions, some finite difference approximations of scalar leftgoing transport equations on the positive half-line with numerical boundary conditions are \(\ell^1\)-stable but \(\ell^q\)-unstable for any \(q>1\). The proof relies on the accurate description of the Green's function for a particular family of finite rank perturbations of Toeplitz operators whose essential spectrum belongs to the closed unit disk and with a simple eigenvalue of modulus \(1\) embedded into the essential spectrum.</p>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Proceedings</h3>
+        <ul>
+            <li>
+                <span class="publication-title">Large time behavior of finite difference schemes for the transport equation</span> (Hyperbolic Problems: Theory, Numerics, Applications. Volume II. HYP 2022, <span class="journal-name">SEMA SIMAI Springer Series</span>)
+
+                <button class="link-button" onclick="window.open('https://doi.org/10.1007/978-3-031-55264-9_6')">Journal</button>
+                <button class="link-button" onclick="window.open('https://hal.science/hal-04191971v1')">HAL</button>
+                <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+                <div class="abstract-content">
+                    <p>In order to study the large time behavior of finite difference schemes for the transport equation, we need to describe the pointwise asymptotic behavior of iterated convolutions for finitely supported sequences indexed on \(\mathbb{Z}\). In this paper, we investigate this question by presenting the main result of [Coeu22] which is a generalization of the so-called local limit theorem in probability theory to complex valued sequences.</p>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Thèse</h3>
+
+        <p>J'ai défendu ma thèse dont le titre est "<i>Stabilité de profils de choc totalement discrets pour les systèmes de lois de conservation</i>" le 12 Juillet 2024. J'ai été supervisé par <a href="https://www.math.univ-toulouse.fr/~jcoulomb/">Jean-François Coulombel</a> et <a href="https://www.math.univ-toulouse.fr/~gfaye/">Grégory Faye</a> au sein de l'<a href="https://www.math.univ-toulouse.fr/">Institut de Mathématiques de Toulouse</a>.</p>
+
+        <ul>
+            <li>
+                <i>Manuscript:</i> 
+                <button class="link-button" onclick="window.open('https://theses.hal.science/tel-04652121')">HAL</button>
+            </li>
+            <li>
+                <i>Présentation:</i>  
+                <button class="link-button" onclick="window.open('Documents/Presentation_These.pdf')">Slides</button></li>
+        </ul>
+        
+    </div>
+    <script>
+        function toggleAbstract(button) {
+            const abstractContent = button.nextElementSibling;
+            if (abstractContent.classList.contains('show')) {
+                abstractContent.classList.remove('show');
+                button.textContent = "Abstract";
+            } else {
+                abstractContent.classList.add('show');
+                button.textContent = "Hide Abstract";
+            }
+        }
+    </script>
+
+</body>
+</html>
